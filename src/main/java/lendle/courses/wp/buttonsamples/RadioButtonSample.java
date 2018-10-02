@@ -10,6 +10,7 @@ import javax.swing.ButtonGroup;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JRadioButton;
+import javax.swing.JToggleButton;
 import javax.swing.WindowConstants;
 
 /**
@@ -28,11 +29,16 @@ public class RadioButtonSample {
         frame.setLayout(new FlowLayout());
         JRadioButton radio1 = new JRadioButton("radio1");
         JRadioButton radio2 = new JRadioButton("radio2");
+        JCheckBox checkBox=new JCheckBox("checkl");
+        JToggleButton toggleButton=new JToggleButton("togglel");
         
         frame.add(radio1);
         frame.add(radio2);
+        frame.add(checkBox);
+        frame.add(toggleButton);
         //建立 ButtonGroup，把 radio1, radio2 加到 ButtonGroup
-        
+        ButtonGroup group=new ButtonGroup();
+        group.add(radio1);
         ////////////////////////////////////////////////////
         
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);

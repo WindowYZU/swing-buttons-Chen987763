@@ -29,7 +29,7 @@ public class ActionListenerSample2 {
         JButton button=new JButton("click");
         //將 sample1 改成用 anonymous class
         //加入 JOptionPane.showMessageDialog(null, "HelloWorld");
-        
+        button.addActionListener(new)
         //////////////////////////////////////////////////////
         frame.add(button);
         
